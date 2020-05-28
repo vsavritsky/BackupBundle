@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="vsavritsky_backup.source.abstract_mysqldump" class="Vsavritsky\Backup\Source\MySqlDumpSource" abstract="true" public="false">
+            <argument /> <!-- name -->
+            <argument /> <!-- database -->
+            <argument /> <!-- host -->
+            <argument /> <!-- user -->
+            <argument /> <!-- password -->
+            <argument /> <!-- ssh_host -->
+            <argument /> <!-- ssh_user -->
+            <argument /> <!-- ssh_port -->
+            <argument /> <!-- timeout -->
+        </service>
+        <service id="vsavritsky_backup.source.abstract_rsync" class="Vsavritsky\Backup\Source\RsyncSource" abstract="true" public="false">
+            <argument /> <!-- name -->
+            <argument /> <!-- source -->
+            <argument type="collection" /> <!-- additional_options -->
+            <argument type="collection" /> <!-- default_options -->
+            <argument /> <!-- timeout -->
+        </service>
+    </services>
+</container>

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <!-- Sources -->
+        <service id="vsavritsky_backup.source_factory.mysqldump" class="vsavritsky\BackupBundle\DependencyInjection\Factory\Source\MySqlDumpSourceFactory" public="false">
+            <tag name="vsavritsky_backup.source_factory" />
+        </service>
+        <service id="vsavritsky_backup.source_factory.rsync" class="vsavritsky\BackupBundle\DependencyInjection\Factory\Source\RsyncSourceFactory" public="false">
+            <tag name="vsavritsky_backup.source_factory" />
+        </service>
+
+        <!-- Namers -->
+        <service id="vsavritsky_backup.namer_factory.simple" class="vsavritsky\BackupBundle\DependencyInjection\Factory\Namer\SimpleNamerFactory" public="false">
+            <tag name="vsavritsky_backup.namer_factory" />
+        </service>
+        <service id="vsavritsky_backup.namer_factory.timestamp" class="vsavritsky\BackupBundle\DependencyInjection\Factory\Namer\TimestampNamerFactory" public="false">
+            <tag name="vsavritsky_backup.namer_factory" />
+        </service>
+
+        <!-- Processors -->
+        <service id="vsavritsky_backup.processor_factory.zip" class="vsavritsky\BackupBundle\DependencyInjection\Factory\Processor\ZipArchiveProcessorFactory" public="false">
+            <tag name="vsavritsky_backup.processor_factory" />
+        </service>
+        <service id="vsavritsky_backup.processor_factory.gzip" class="vsavritsky\BackupBundle\DependencyInjection\Factory\Processor\GzipArchiveProcessorFactory" public="false">
+            <tag name="vsavritsky_backup.processor_factory" />
+        </service>
+
+        <!-- Destinations -->
+        <service id="vsavritsky_backup.destination_factory.stream" class="vsavritsky\BackupBundle\DependencyInjection\Factory\Destination\StreamDestinationFactory" public="false">
+            <tag name="vsavritsky_backup.destination_factory" />
+        </service>
+        <service id="vsavritsky_backup.destination_factory.flysystem" class="vsavritsky\BackupBundle\DependencyInjection\Factory\Destination\FlysystemDestinationFactory" public="false">
+            <tag name="vsavritsky_backup.destination_factory" />
+        </service>
+        <service id="vsavritsky_backup.destination_factory.s3cmd" class="vsavritsky\BackupBundle\DependencyInjection\Factory\Destination\S3CmdDestinationFactory" public="false">
+            <tag name="vsavritsky_backup.destination_factory" />
+        </service>
+    </services>
+</container>

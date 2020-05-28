@@ -1,0 +1,35 @@
+{
+    "name": "vsavritsky/backup-bundle",
+    "description": "Symfony Bundle that wraps backup commands",
+    "keywords": ["symfony", "bundle", "backup"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vladimir Savritsky",
+            "email": "vladimir.savritsky@gmail.com"
+        }
+    ],
+    "require": {
+        "zenstruck/backup": "^1.3.0",
+        "symfony/framework-bundle": "~2.3|~3.0|^4.*|^5.*"
+    },
+    "require-dev": {
+        "symfony/console": "~2.3|~3.0|^4.*|^5.*",
+        "symfony/yaml": "~2.3|~3.0|^4.*|^5.*",
+        "matthiasnoback/symfony-dependency-injection-test": "^1.1",
+        "sebastian/exporter": "^2.0",
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": { "Vsavritsky\\BackupBundle\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Vsavritsky\\BackupBundle\\Tests\\": "tests/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}
