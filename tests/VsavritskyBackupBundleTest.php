@@ -2,12 +2,9 @@
 
 namespace Vsavritsky\BackupBundle\Tests;
 
-use Vsavritsky\BackupBundle\ZenstruckBackupBundle;
+use Vsavritsky\BackupBundle\VsavritskyBackupBundle;
 
-/**
- * @author Kevin Bond <kevinbond@gmail.com>
- */
-class ZenstruckBackupBundleTest extends \PHPUnit_Framework_TestCase
+class VsavritskyBackupBundleTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @test
@@ -30,7 +27,7 @@ class ZenstruckBackupBundleTest extends \PHPUnit_Framework_TestCase
                 $this->isInstanceOf('Vsavritsky\BackupBundle\DependencyInjection\Compiler\NamerCompilerPass')
             );
 
-        $bundle = new ZenstruckBackupBundle();
+        $bundle = new VsavritskyBackupBundle();
         $bundle->build($container);
     }
 }

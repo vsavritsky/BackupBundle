@@ -6,9 +6,6 @@ use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractExtensionTestCase;
 use Symfony\Component\Yaml\Yaml;
 use Vsavritsky\BackupBundle\DependencyInjection\VsavritskyBackupExtension;
 
-/**
- * @author Kevin Bond <kevinbond@gmail.com>
- */
 class vsavritskyBackupExtensionTest extends AbstractExtensionTestCase
 {
     /**

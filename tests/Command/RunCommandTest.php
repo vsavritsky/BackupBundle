@@ -1,8 +1,8 @@
 <?php
 
-namespace vsavritsky\BackupBundle\Tests\Command;
+namespace Vsavritsky\BackupBundle\Tests\Command;
 
-use vsavritsky\BackupBundle\Command\RunCommand;
+use Vsavritsky\BackupBundle\Command\RunCommand;
 
 /**
  * @author Kevin Bond <kevinbond@gmail.com>

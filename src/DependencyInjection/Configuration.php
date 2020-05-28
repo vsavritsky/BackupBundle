@@ -7,9 +7,6 @@ use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Vsavritsky\BackupBundle\DependencyInjection\Factory\Factory;
 
-/**
- * @author Kevin Bond <kbond@inboxmarketer.com>
- */
 class Configuration implements ConfigurationInterface
 {
     private $namerFactories;

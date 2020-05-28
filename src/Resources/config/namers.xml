@@ -5,10 +5,10 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="vsavritsky_backup.namer.abstract_simple" class="Vsavritsky\Backup\Namer\SimpleNamer" abstract="true" public="false">
+        <service id="vsavritsky_backup.namer.abstract_simple" class="Zenstruck\Backup\Namer\SimpleNamer" abstract="true" public="false">
             <argument /> <!-- name -->
         </service>
-        <service id="vsavritsky_backup.namer.abstract_timestamp" class="Vsavritsky\Backup\Namer\TimestampNamer" abstract="true" public="false">
+        <service id="vsavritsky_backup.namer.abstract_timestamp" class="Zenstruck\Backup\Namer\TimestampNamer" abstract="true" public="false">
             <argument /> <!-- name -->
             <argument /> <!-- format -->
             <argument /> <!-- prefix -->
