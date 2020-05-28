@@ -6,13 +6,13 @@
 
     <services>
         <!-- ProfileRegistry -->
-        <service id="vsavritsky_backup.profile_registry" class="Vsavritsky\Backup\ProfileRegistry" />
+        <service id="vsavritsky_backup.profile_registry" class="Zenstruck\Backup\ProfileRegistry" />
 
         <!-- ProfileBuilder -->
-        <service id="vsavritsky_backup.profile_builder" class="Vsavritsky\Backup\ProfileBuilder" public="false" />
+        <service id="vsavritsky_backup.profile_builder" class="Zenstruck\Backup\ProfileBuilder" public="false" />
 
         <!-- Executor -->
-        <service id="vsavritsky_backup.executor" class="Vsavritsky\Backup\Executor">
+        <service id="vsavritsky_backup.executor" class="Zenstruck\Backup\Executor">
             <argument type="service" id="logger" />
             <tag name="monolog.logger" channel="backup" />
         </service>
@@ -20,7 +20,7 @@
         <!-- Abstract Profile -->
         <service
             id="vsavritsky_backup.abstract_profile"
-            class="Vsavritsky\Backup\Profile"
+            class="Zenstruck\Backup\Profile"
             abstract="true"
             public="false"
         >

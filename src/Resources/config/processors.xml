@@ -5,12 +5,12 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="vsavritsky_backup.processor.abstract_zip" class="Vsavritsky\Backup\Processor\ZipArchiveProcessor" abstract="true" public="false">
+        <service id="vsavritsky_backup.processor.abstract_zip" class="Zenstruck\Backup\Processor\ZipArchiveProcessor" abstract="true" public="false">
             <argument /> <!-- name -->
             <argument type="collection" /> <!-- options -->
             <argument /> <!-- timeout -->
         </service>
-        <service id="vsavritsky_backup.processor.abstract_gzip" class="Vsavritsky\Backup\Processor\GzipArchiveProcessor" abstract="true" public="false">
+        <service id="vsavritsky_backup.processor.abstract_gzip" class="Zenstruck\Backup\Processor\GzipArchiveProcessor" abstract="true" public="false">
             <argument /> <!-- name -->
             <argument type="collection" /> <!-- options -->
             <argument /> <!-- timeout -->

@@ -5,8 +5,8 @@ namespace Vsavritsky\BackupBundle\Command;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Vsavritsky\Backup\Console\Command\ListCommand as BaseListCommand;
-use Vsavritsky\Backup\Console\Helper\BackupHelper;
+use Zenstruck\Backup\Console\Command\ListCommand as BaseListCommand;
+use Zenstruck\Backup\Console\Helper\BackupHelper;
 
 class ListCommand extends BaseListCommand
 {

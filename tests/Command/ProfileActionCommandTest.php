@@ -6,9 +6,9 @@ use Psr\Log\NullLogger;
 use Symfony\Bundle\FrameworkBundle\Console\Application as FrameworkApplication;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Tester\CommandTester;
-use Vsavritsky\Backup\Console\Command\ProfileActionCommand;
-use Vsavritsky\Backup\Executor;
-use Vsavritsky\Backup\ProfileRegistry;
+use Zenstruck\Backup\Console\Command\ProfileActionCommand;
+use Zenstruck\Backup\Executor;
+use Zenstruck\Backup\ProfileRegistry;
 
 abstract class ProfileActionCommandTest extends \PHPUnit_Framework_TestCase
 {

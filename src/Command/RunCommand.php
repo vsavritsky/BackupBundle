@@ -5,8 +5,8 @@ namespace Vsavritsky\BackupBundle\Command;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Vsavritsky\Backup\Console\Command\RunCommand as BaseRunCommand;
-use Vsavritsky\Backup\Console\Helper\BackupHelper;
+use Zenstruck\Backup\Console\Command\RunCommand as BaseRunCommand;
+use Zenstruck\Backup\Console\Helper\BackupHelper;
 
 /**
  * @author Kevin Bond <kevinbond@gmail.com>

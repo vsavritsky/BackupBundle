@@ -6,9 +6,6 @@ use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractCompilerPassTestCase
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Reference;
 
-/**
- * @author Kevin Bond <kevinbond@gmail.com>
- */
 abstract class RegisterCompilerPassTest extends AbstractCompilerPassTestCase
 {
     /**

@@ -7,7 +7,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\DefinitionDecorator;
 use Symfony\Component\DependencyInjection\Reference;
 use Vsavritsky\BackupBundle\DependencyInjection\Factory\Factory;
-use Vsavritsky\Backup\Source\MySqlDumpSource;
+use Zenstruck\Backup\Source\MySqlDumpSource;
 
 class MySqlDumpSourceFactory implements Factory
 {
